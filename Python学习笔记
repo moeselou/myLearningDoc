@@ -1,1 +1,3 @@
-复制list，nwe_list = old_list[:]
+1/ 复制list，nwe_list = old_list[:]
+
+2/ PEP8是python的编程规范，建议缩进为4个空格（可以在编辑器里设置4个空格为Tab制表符），行长建议79个字符。
