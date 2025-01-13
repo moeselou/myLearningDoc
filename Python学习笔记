@@ -1,0 +1,1 @@
+复制list，nwe_list = old_list[:]
