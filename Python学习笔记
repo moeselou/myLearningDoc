@@ -1,5 +1,6 @@
 1/ 列表推导式用来初始化列表或者进行一些操作，可以提高效率
 复制list，用切片，nwe_list = old_list[:]
+判断数据是否在/不在list中，可以用 "test" in/not in list_tests，返回值是True或False
 
 2/ PEP8是python的编程规范，建议缩进为4个空格（可以在编辑器里设置4个空格为Tab制表符），行长建议79个字符。
 
@@ -7,3 +8,35 @@
 
 4/ 元组实际上等于去掉括号（）的格式，example = (1,2,3,) 等价于 example = 1,2,3,，元组最后要用","，结束，   
 
+5/ Python 中的假值包括：
+    数值 0、0.0、0j。
+    空序列 []、()、''、""、b""。
+    空集合 {}、set()。
+    特殊值 None 和 False。
+    
+    1. 数值类型
+    整数 0：bool(0) 返回 False。
+    浮点数 0.0：bool(0.0) 返回 False。
+    复数 0j：bool(0j) 返回 False。
+    
+    2. 空序列
+    空列表 []：bool([]) 返回 False。
+    空元组 ()：bool(()) 返回 False。
+    空字符串 ""、''：bool("") 返回 False。
+    空字节串 b""：bool(b"") 返回 False。
+    
+    3. 空集合
+    空字典 {}：bool({}) 返回 False。
+    空集合 set()：bool(set()) 返回 False。
+    
+    4. 特殊值
+    None：bool(None) 返回 False。
+    False：bool(False) 返回 False。
+    
+    5. 自定义对象的假值行为
+    对于自定义类，可以通过定义 __bool__() 或 __len__() 方法来控制其实例在布尔上下文中的行为：
+    如果定义了 __bool__()，则调用该方法。
+    如果未定义 __bool__() 但定义了 __len__()，则根据 __len__() 的返回值判断（0 为 False，非零为 True）。
+    如果两者都未定义，则实例始终为 True。
+
+6/ 
