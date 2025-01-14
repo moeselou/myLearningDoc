@@ -39,4 +39,11 @@
     如果未定义 __bool__() 但定义了 __len__()，则根据 __len__() 的返回值判断（0 为 False，非零为 True）。
     如果两者都未定义，则实例始终为 True。
 
-6/ 
+6/ 字典类型，用get()进行获取，可以指定键值不存在的返回信息get('asd0','message')，如果不指定，则返回None。
+遍历字典键值对：for k, v in dic.items():
+遍历字典键：for k in dic.keys(): 
+//等同于 for k in dic:
+//显式的使用keys(),可以让代码更容易读懂，
+//keys()返回一个list，所以可以用sorted(dic.keys())进行排序（这个排序不影响原字典键的顺序）
+遍历字典值：for k, v in dic.values():
+//键不会重复，但值会重复，如果对于返回的值进行集合处理，就可以去重复，set(for k, v in dic.values())
