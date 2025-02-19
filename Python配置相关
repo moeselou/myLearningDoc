@@ -1,1 +1,14 @@
 
+1/ 环境变量配置
+在多python环境下，建议修改python.exe的名字未pythonX.X.exe，并配置多个环境变量给不同的版本。
+
+2/ 创建虚拟环境的指令
+python -m venv .venv
+
+3/ VScode配置
+搜索插件python snippets
+
+3/ Ollama环境变量配置
+OLLAMA_HOST
+0.0.0.0
+
