@@ -75,3 +75,30 @@ set() 的参数可以是以下任意一种可迭代对象：
 
 避免语法错误：
 在Python中，空的代码块会导致语法错误，pass 可以避免这种错误。
+
+10/ 程序
+def greetPerson(*name):
+    print('Hello', name)
+  
+greetPerson('Runoob', 'Google')
+
+>>> Hello ('Runoob', 'Google')
+加了星号 * 的参数会以元组(tuple)的形式导入，存放所有未命名的变量参数。
+
+11/ 以下 Python 代码输出结果是什么?
+
+print(0.1 + 0.2 == 0.3)
+>>>False
+
+因为有精度问题：
+
+>>> print(0.1 + 0.2 == 0.3)
+False
+>>> print(0.1+0.2)
+0.30000000000000004
+>>> 
+可以使用 math 的 isclose 代替：
+
+>>> import math
+>>> math.isclose(0.1 + 0.2, 0.3)
+True
