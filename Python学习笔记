@@ -102,3 +102,7 @@ False
 >>> import math
 >>> math.isclose(0.1 + 0.2, 0.3)
 True
+
+12/ 字符串里面的%是一个普通字符怎么办？这个时候就需要转义，用%%来表示一个%：
+>>> 'growth rate: %d %%' % 7
+'growth rate: 7 %'
